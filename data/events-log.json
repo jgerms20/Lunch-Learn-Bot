@@ -1,0 +1,104 @@
+{
+  "events": [
+    {
+      "id": "E001",
+      "partnerId": "002",
+      "company": "Genius",
+      "date": "2025-11-15",
+      "time": "12:00 PM - 1:00 PM",
+      "location": "TBWA Main Conference Room",
+      "format": "In-Person",
+      "speaker": {
+        "name": "",
+        "title": ""
+      },
+      "topic": "Lyrics and cultural engagement",
+      "description": "How Genius built a platform around music lyrics and cultural commentary",
+      "targetAudience": "All Agency",
+      "estimatedAttendees": 50,
+      "actualAttendees": 45,
+      "food": "Chipotle",
+      "status": "Completed",
+      "internalPromoSent": true,
+      "deckReceived": true,
+      "feedback": {
+        "rating": 4.5,
+        "keyTakeaways": [
+          "Cultural context matters in content platforms",
+          "Community engagement drives value",
+          "Annotation as a content format"
+        ],
+        "notes": "Highly successful, great engagement from team"
+      }
+    },
+    {
+      "id": "E002",
+      "partnerId": "003",
+      "company": "Pinterest",
+      "date": "2025-10-20",
+      "time": "12:00 PM - 1:00 PM",
+      "location": "TBWA Main Conference Room",
+      "format": "In-Person",
+      "speaker": {
+        "name": "",
+        "title": ""
+      },
+      "topic": "Pinterest advertising innovations",
+      "description": "Latest ad formats and targeting capabilities on Pinterest",
+      "targetAudience": "Media + Strategy",
+      "estimatedAttendees": 45,
+      "actualAttendees": 50,
+      "food": "Sweetgreen",
+      "status": "Completed",
+      "internalPromoSent": true,
+      "deckReceived": true,
+      "feedback": {
+        "rating": 4.7,
+        "keyTakeaways": [
+          "Pinterest users have high purchase intent",
+          "Visual search is powerful for discovery",
+          "New shoppable ad formats"
+        ],
+        "notes": "Highly successful, lots of questions from team about implementation"
+      }
+    },
+    {
+      "id": "E003",
+      "partnerId": "004",
+      "company": "Outfront Media",
+      "date": "2025-12-05",
+      "time": "12:00 PM - 1:00 PM",
+      "location": "TBWA Main Conference Room",
+      "format": "In-Person",
+      "speaker": {
+        "name": "",
+        "title": ""
+      },
+      "topic": "OOH innovations and digital integration",
+      "description": "How digital is transforming out-of-home advertising",
+      "targetAudience": "All Agency",
+      "estimatedAttendees": 40,
+      "actualAttendees": 40,
+      "food": "Mendocino Farms",
+      "status": "Completed",
+      "internalPromoSent": true,
+      "deckReceived": true,
+      "feedback": {
+        "rating": 4.3,
+        "keyTakeaways": [
+          "Programmatic OOH is growing fast",
+          "Location data enables better targeting",
+          "Creative opportunities with digital billboards"
+        ],
+        "notes": "Highly successful, good mix of creative and media teams attending"
+      }
+    }
+  ],
+  "upcoming": [],
+  "metadata": {
+    "lastUpdated": "2026-02-03",
+    "totalEvents": 3,
+    "upcomingEvents": 0,
+    "avgAttendance": 45
+  }
+}

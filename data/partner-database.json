@@ -1,0 +1,218 @@
+{
+  "partners": [
+    {
+      "id": "001",
+      "company": "OpenAI",
+      "vertical": "AI/Emerging Tech",
+      "contact": {
+        "name": "",
+        "title": "",
+        "email": "",
+        "phone": "",
+        "linkedinUrl": "",
+        "geography": "San Francisco",
+        "source": ""
+      },
+      "status": "Researching",
+      "lastContactDate": "",
+      "nextAction": "Find contact for partnerships/marketing - priority due to recent ads announcement",
+      "notes": "URGENT: Just announced ads on platform. Director wants them staffed ASAP. Need to find right person in partnerships or marketing.",
+      "tags": ["Emerging Tech", "Current Priority", "AI", "Advertising Platform"],
+      "lunchLearnHistory": [],
+      "dateAdded": "2026-02-03"
+    },
+    {
+      "id": "002",
+      "company": "Genius",
+      "vertical": "Social Media/Content",
+      "contact": {
+        "name": "",
+        "title": "",
+        "email": "",
+        "phone": "",
+        "linkedinUrl": "",
+        "geography": "",
+        "source": ""
+      },
+      "status": "Completed",
+      "lastContactDate": "2025-11-15",
+      "nextAction": "",
+      "notes": "One of our most successful L&Ls. Great attendance and engagement.",
+      "tags": ["Past Success", "Social Media", "Content Platform"],
+      "lunchLearnHistory": [
+        {
+          "date": "2025-11-15",
+          "topic": "Lyrics and cultural engagement",
+          "attendees": 45,
+          "feedback": "Highly successful"
+        }
+      ],
+      "dateAdded": "2025-10-01"
+    },
+    {
+      "id": "003",
+      "company": "Pinterest",
+      "vertical": "Social Media",
+      "contact": {
+        "name": "",
+        "title": "",
+        "email": "",
+        "phone": "",
+        "linkedinUrl": "",
+        "geography": "",
+        "source": ""
+      },
+      "status": "Completed",
+      "lastContactDate": "2025-10-20",
+      "nextAction": "",
+      "notes": "One of our most successful L&Ls. Team loved learning about Pinterest advertising strategies.",
+      "tags": ["Past Success", "Social Media", "Core Platform"],
+      "lunchLearnHistory": [
+        {
+          "date": "2025-10-20",
+          "topic": "Pinterest advertising innovations",
+          "attendees": 50,
+          "feedback": "Highly successful"
+        }
+      ],
+      "dateAdded": "2025-09-01"
+    },
+    {
+      "id": "004",
+      "company": "Outfront Media",
+      "vertical": "Out-of-Home",
+      "contact": {
+        "name": "",
+        "title": "",
+        "email": "",
+        "phone": "",
+        "linkedinUrl": "",
+        "geography": "LA",
+        "source": ""
+      },
+      "status": "Completed",
+      "lastContactDate": "2025-12-05",
+      "nextAction": "",
+      "notes": "One of our most successful L&Ls. Great insights on OOH trends and digital integration.",
+      "tags": ["Past Success", "OOH", "LA-Based"],
+      "lunchLearnHistory": [
+        {
+          "date": "2025-12-05",
+          "topic": "OOH innovations and digital integration",
+          "attendees": 40,
+          "feedback": "Highly successful"
+        }
+      ],
+      "dateAdded": "2025-11-01"
+    },
+    {
+      "id": "005",
+      "company": "Meta",
+      "vertical": "Social Media",
+      "contact": {
+        "name": "",
+        "title": "",
+        "email": "",
+        "phone": "",
+        "linkedinUrl": "",
+        "geography": "",
+        "source": ""
+      },
+      "status": "Researching",
+      "lastContactDate": "",
+      "nextAction": "Find partnerships contact - core platform we should have strong relationship with",
+      "notes": "Core ad platform. Essential for agency relationship. Look for partnerships or agency team contact.",
+      "tags": ["Core Platform", "Social Media", "High Priority"],
+      "lunchLearnHistory": [],
+      "dateAdded": "2026-02-03"
+    },
+    {
+      "id": "006",
+      "company": "Snapchat",
+      "vertical": "Social Media",
+      "contact": {
+        "name": "",
+        "title": "",
+        "email": "",
+        "phone": "",
+        "linkedinUrl": "",
+        "geography": "LA",
+        "source": ""
+      },
+      "status": "Researching",
+      "lastContactDate": "",
+      "nextAction": "Find LA-based partnerships contact",
+      "notes": "Core ad platform, LA-based which is ideal. AR/lens innovations would be great topic.",
+      "tags": ["Core Platform", "Social Media", "LA-Based", "AR/Innovation"],
+      "lunchLearnHistory": [],
+      "dateAdded": "2026-02-03"
+    },
+    {
+      "id": "007",
+      "company": "TikTok",
+      "vertical": "Social Media",
+      "contact": {
+        "name": "",
+        "title": "",
+        "email": "",
+        "phone": "",
+        "linkedinUrl": "",
+        "geography": "LA",
+        "source": ""
+      },
+      "status": "Researching",
+      "lastContactDate": "",
+      "nextAction": "Find LA-based partnerships contact",
+      "notes": "Essential platform for agency. LA office available. Creative best practices would be valuable.",
+      "tags": ["Core Platform", "Social Media", "LA-Based", "Creative Focus"],
+      "lunchLearnHistory": [],
+      "dateAdded": "2026-02-03"
+    },
+    {
+      "id": "008",
+      "company": "Netflix",
+      "vertical": "Streaming",
+      "contact": {
+        "name": "",
+        "title": "",
+        "email": "",
+        "phone": "",
+        "linkedinUrl": "",
+        "geography": "LA",
+        "source": ""
+      },
+      "status": "Researching",
+      "lastContactDate": "",
+      "nextAction": "Find ad sales or partnerships contact - streaming ad innovations focus",
+      "notes": "Streaming ad platform. LA-based. Ad tier innovations and audience targeting would be great topics.",
+      "tags": ["Streaming", "LA-Based", "Ad Innovation"],
+      "lunchLearnHistory": [],
+      "dateAdded": "2026-02-03"
+    }
+  ],
+  "verticals": [
+    "Social Media",
+    "Streaming",
+    "Out-of-Home",
+    "Podcast/Audio",
+    "AI/Emerging Tech",
+    "Cultural/Trend",
+    "Retail Media",
+    "Gaming"
+  ],
+  "statusOptions": [
+    "Researching",
+    "Contacted",
+    "In Conversation",
+    "Scheduled",
+    "Completed",
+    "Declined",
+    "Follow-Up Needed"
+  ],
+  "metadata": {
+    "lastUpdated": "2026-02-03",
+    "totalPartners": 8,
+    "activeOpportunities": 5,
+    "completedLunchLearns": 3
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "suggestions": [
+    {
+      "id": "S001",
+      "date": "2026-02-03",
+      "requestType": "Vertical Focus",
+      "request": "AI/Emerging Tech partners",
+      "suggestions": [
+        {
+          "company": "OpenAI",
+          "priority": "Urgent",
+          "reasoning": "Just announced ads platform - highly relevant to agency. Director priority.",
+          "relevantTo": "All teams - emerging ad platform",
+          "contactTarget": "Partnerships or Marketing lead",
+          "acted": true
+        },
+        {
+          "company": "Anthropic",
+          "priority": "High",
+          "reasoning": "Claude AI - competitor to OpenAI. Unique approach to AI safety and enterprise.",
+          "relevantTo": "Strategy, Technology teams",
+          "contactTarget": "Business Development or Partnerships",
+          "acted": false
+        },
+        {
+          "company": "Midjourney",
+          "priority": "Medium",
+          "reasoning": "AI image generation - highly relevant to creative teams. Understanding capabilities.",
+          "relevantTo": "Creative, Art, Strategy",
+          "contactTarget": "Business or Partnership lead",
+          "acted": false
+        }
+      ]
+    },
+    {
+      "id": "S002",
+      "date": "2026-02-03",
+      "requestType": "Gap Analysis",
+      "request": "Balance across verticals - need more streaming",
+      "suggestions": [
+        {
+          "company": "Netflix",
+          "priority": "High",
+          "reasoning": "Ad tier is new and evolving. LA-based. Essential streaming platform.",
+          "relevantTo": "Media, Strategy teams",
+          "contactTarget": "Ad Sales or Partnerships",
+          "acted": false
+        },
+        {
+          "company": "Hulu",
+          "priority": "Medium",
+          "reasoning": "Established ad-supported model. Different from Netflix approach.",
+          "relevantTo": "Media teams",
+          "contactTarget": "Agency Sales",
+          "acted": false
+        },
+        {
+          "company": "YouTube",
+          "priority": "High",
+          "reasoning": "Largest video platform. New ad formats and creator economy insights.",
+          "relevantTo": "Media, Creative, Strategy",
+          "contactTarget": "Agency Partnerships",
+          "acted": false
+        }
+      ]
+    }
+  ],
+  "verticalDistribution": {
+    "Social Media": 4,
+    "Streaming": 1,
+    "Out-of-Home": 1,
+    "Podcast/Audio": 0,
+    "AI/Emerging Tech": 1,
+    "Cultural/Trend": 0,
+    "Retail Media": 0,
+    "Gaming": 0
+  },
+  "recentTrends": [
+    {
+      "date": "2026-02-03",
+      "trend": "OpenAI announces ads platform",
+      "source": "Industry news",
+      "relevance": "High - new advertising platform",
+      "actionTaken": "Added to research pipeline"
+    }
+  ],
+  "metadata": {
+    "lastUpdated": "2026-02-03",
+    "totalSuggestions": 2,
+    "actedupon": 1
+  }
+}

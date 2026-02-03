@@ -1,0 +1,77 @@
+{
+  "outreach": [
+    {
+      "id": "O001",
+      "partnerId": "001",
+      "company": "OpenAI",
+      "stage": "Researching",
+      "sender": "Joshua German",
+      "targetContact": {
+        "name": "",
+        "title": "TBD - Partnerships or Marketing",
+        "email": "",
+        "found": false
+      },
+      "emailSequence": [],
+      "nextStep": "Find right contact person",
+      "priority": "High",
+      "reason": "Recent ads announcement - director wants them staffed ASAP",
+      "dateStarted": "2026-02-03",
+      "lastActivity": "2026-02-03"
+    },
+    {
+      "id": "O002",
+      "partnerId": "005",
+      "company": "Meta",
+      "stage": "Researching",
+      "sender": "Joshua German",
+      "targetContact": {
+        "name": "",
+        "title": "TBD - Agency Partnerships",
+        "email": "",
+        "found": false
+      },
+      "emailSequence": [],
+      "nextStep": "Find agency partnerships contact",
+      "priority": "High",
+      "reason": "Core platform - essential relationship",
+      "dateStarted": "2026-02-03",
+      "lastActivity": "2026-02-03"
+    },
+    {
+      "id": "O003",
+      "partnerId": "006",
+      "company": "Snapchat",
+      "stage": "Researching",
+      "sender": "Joshua German",
+      "targetContact": {
+        "name": "",
+        "title": "TBD - Agency Partnerships LA",
+        "email": "",
+        "found": false
+      },
+      "emailSequence": [],
+      "nextStep": "Find LA-based partnerships contact",
+      "priority": "Medium",
+      "reason": "Core platform, LA-based ideal for in-person",
+      "dateStarted": "2026-02-03",
+      "lastActivity": "2026-02-03"
+    }
+  ],
+  "emailSequenceStages": [
+    "Not Started",
+    "First Outreach Sent",
+    "Follow-Up 1 Sent",
+    "Follow-Up 2 Sent",
+    "In Conversation",
+    "Scheduling",
+    "Confirmed",
+    "Declined",
+    "No Response"
+  ],
+  "metadata": {
+    "lastUpdated": "2026-02-03",
+    "activeOutreach": 3,
+    "awaitingResponse": 0
+  }
+}
