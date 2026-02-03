@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TBWA Lunch & Learn System</title>
+    <style>
+        /* Inline all the CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #000;
+            margin-bottom: 5px;
+        }
+
+        .logo p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .section {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        .info-box {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 6px;
+            border-left: 4px solid #000;
+            margin-bottom: 15px;
+        }
+
+        .info-box h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .info-box p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #000;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 3px;
+            font-size: 12px;
+            margin-right: 5px;
+            margin-top: 5px;
+        }
+
+        .instructions {
+            background: #e3f2fd;
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+
+        .instructions h3 {
+            color: #1976d2;
+            margin-bottom: 10px;
+        }
+
+        .instructions code {
+            background: #fff;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: monospace;
+            font-size: 13px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: #1976d2;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1>🎓 Lunch & Learn System</h1>
+                <p>TBWA\Chiat\Day LA - Connections Strategy</p>
+            </div>
+        </header>
+
+        <div class="instructions">
+            <h3>⚠️ How to Access the Full Dashboard</h3>
+            <p>Since this system runs in a remote environment, you'll need to access it on your local machine:</p>
+            <ol style="margin-left: 20px; margin-top: 10px;">
+                <li>Clone the repo to your local machine: <code>git clone &lt;repo-url&gt;</code></li>
+                <li>Navigate to the folder: <code>cd Lunch-Learn-Bot</code></li>
+                <li>Start the server: <code>python3 -m http.server 8000</code></li>
+                <li>Open browser to: <code>http://localhost:8000/dashboard/</code></li>
+            </ol>
+            <p style="margin-top: 10px;"><strong>Or copy the entire folder to your OneDrive and access it from any device!</strong></p>
+        </div>
+
+        <div class="section">
+            <h2>📊 System Overview</h2>
+            <div class="grid">
+                <div class="info-box">
+                    <h3>8 Partners</h3>
+                    <p>In database and ready to track</p>
+                </div>
+                <div class="info-box">
+                    <h3>3 Completed</h3>
+                    <p>Successful L&Ls: Genius, Pinterest, Outfront</p>
+                </div>
+                <div class="info-box">
+                    <h3>5 Active</h3>
+                    <p>Researching and ready for outreach</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🔥 Urgent Opportunities</h2>
+
+            <div class="info-box">
+                <h3>1. OpenAI - AI/Emerging Tech</h3>
+                <p><strong>Priority:</strong> URGENT</p>
+                <p><strong>Why:</strong> Just announced advertising platform - director wants them ASAP</p>
+                <p><strong>Next Action:</strong> Find contact for partnerships/marketing</p>
+                <div>
+                    <span class="tag">Current Priority</span>
+                    <span class="tag">Emerging Tech</span>
+                    <span class="tag">AI</span>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h3>2. Meta - Social Media</h3>
+                <p><strong>Priority:</strong> HIGH</p>
+                <p><strong>Why:</strong> Core platform - essential agency relationship</p>
+                <p><strong>Next Action:</strong> Find partnerships contact</p>
+                <div>
+                    <span class="tag">Core Platform</span>
+                    <span class="tag">Social Media</span>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h3>3. Netflix - Streaming</h3>
+                <p><strong>Priority:</strong> HIGH</p>
+                <p><strong>Why:</strong> Ad tier innovations, LA-based</p>
+                <p><strong>Next Action:</strong> Research ad sales contact</p>
+                <div>
+                    <span class="tag">Streaming</span>
+                    <span class="tag">LA-Based</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🎯 Quick Start Guide</h2>
+
+            <h3 style="margin-bottom: 10px;">1. Run Partner Suggestions</h3>
+            <p style="margin-bottom: 20px;">Get intelligent partner recommendations:</p>
+            <code style="display: block; background: #f5f5f5; padding: 10px; border-radius: 4px; margin-bottom: 20px;">python3 suggest-partners.py</code>
+
+            <h3 style="margin-bottom: 10px;">2. Use Claude Skills (Cross-Device!)</h3>
+            <p>These work on desktop app, web, mobile, anywhere you use Claude:</p>
+            <ul>
+                <li><strong>Draft Outreach Email:</strong> "Draft an outreach email for [COMPANY] about [TOPIC]"</li>
+                <li><strong>Generate Internal Invite:</strong> "Generate internal invite for [COMPANY] L&L on [DATE]"</li>
+                <li><strong>Research Contact:</strong> "Research contact at [COMPANY]"</li>
+                <li><strong>Suggest Partners:</strong> "Suggest partners for [VERTICAL]"</li>
+                <li><strong>Summarize Audio:</strong> "Summarize this audio/voice note"</li>
+            </ul>
+
+            <h3 style="margin-top: 20px; margin-bottom: 10px;">3. Follow the Workflow</h3>
+            <p>See <code>docs/WORKFLOW_GUIDE.md</code> for complete step-by-step from ideation to post-event.</p>
+        </div>
+
+        <div class="section">
+            <h2>📁 System Components</h2>
+
+            <div class="info-box">
+                <h3>Data Files (data/)</h3>
+                <ul>
+                    <li><strong>partner-database.json</strong> - All partners and contacts</li>
+                    <li><strong>events-log.json</strong> - Past and upcoming L&Ls</li>
+                    <li><strong>outreach-tracker.json</strong> - Email sequences and status</li>
+                    <li><strong>suggestions-log.json</strong> - Historical suggestions</li>
+                </ul>
+            </div>
+
+            <div class="info-box">
+                <h3>Templates (templates/)</h3>
+                <ul>
+                    <li><strong>emails/</strong> - First outreach, follow-up, scheduling, confirmation, thank you</li>
+                    <li><strong>internal-comms/</strong> - Announcements, reminders, Teams messages</li>
+                </ul>
+            </div>
+
+            <div class="info-box">
+                <h3>Skills (skills/) ⭐</h3>
+                <ul>
+                    <li><strong>draft-outreach-email.md</strong></li>
+                    <li><strong>generate-internal-invite.md</strong></li>
+                    <li><strong>research-contact.md</strong></li>
+                    <li><strong>suggest-partners.md</strong></li>
+                    <li><strong>summarize-audio.md</strong></li>
+                </ul>
+            </div>
+
+            <div class="info-box">
+                <h3>Documentation (docs/)</h3>
+                <ul>
+                    <li><strong>WORKFLOW_GUIDE.md</strong> - How to use the system</li>
+                    <li><strong>TROUBLESHOOTING.md</strong> - Common issues and fixes</li>
+                    <li><strong>PROJECT_LOG.md</strong> - Daily progress tracking</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📋 Partners in Database</h2>
+
+            <h3 style="margin-bottom: 10px;">Active Research (5 partners)</h3>
+            <ul>
+                <li><strong>OpenAI</strong> - AI/Emerging Tech (URGENT)</li>
+                <li><strong>Meta</strong> - Social Media (Core Platform)</li>
+                <li><strong>Snapchat</strong> - Social Media (LA-Based)</li>
+                <li><strong>TikTok</strong> - Social Media (LA-Based)</li>
+                <li><strong>Netflix</strong> - Streaming (LA-Based)</li>
+            </ul>
+
+            <h3 style="margin-top: 20px; margin-bottom: 10px;">Completed L&Ls (3 partners)</h3>
+            <ul>
+                <li><strong>Genius</strong> - Social Media/Content (45 attendees, highly successful)</li>
+                <li><strong>Pinterest</strong> - Social Media (50 attendees, highly successful)</li>
+                <li><strong>Outfront Media</strong> - Out-of-Home (40 attendees, highly successful)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>🔄 Next Steps</h2>
+            <ol>
+                <li><strong>Clone the repo to your local machine</strong> or copy to OneDrive</li>
+                <li><strong>Run the dashboard locally</strong> to see the full interactive interface</li>
+                <li><strong>Test a Claude skill</strong> - try drafting an OpenAI outreach email</li>
+                <li><strong>Start using the system</strong> - pick your next L&L partner and go!</li>
+                <li><strong>Update PROJECT_LOG.md</strong> twice daily to track progress</li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h2>📚 Key Files to Read</h2>
+            <ul>
+                <li><strong>README.md</strong> - System overview and quick start</li>
+                <li><strong>SYSTEM_PLAN.md</strong> - Complete architecture and design</li>
+                <li><strong>docs/WORKFLOW_GUIDE.md</strong> - Step-by-step usage guide</li>
+                <li><strong>docs/TROUBLESHOOTING.md</strong> - Solutions to common issues</li>
+            </ul>
+        </div>
+
+        <div style="background: #f9f9f9; padding: 20px; border-radius: 6px; margin-top: 20px; text-align: center;">
+            <p style="color: #666;">
+                Built for Joshua German & Connections Strategy Team<br>
+                TBWA\Chiat\Day LA<br>
+                <a href="https://github.com/jgerms20/Lunch-Learn-Bot">View on GitHub</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
