@@ -188,6 +188,377 @@
       "tags": ["Streaming", "LA-Based", "Ad Innovation"],
       "lunchLearnHistory": [],
       "dateAdded": "2026-02-03"
+    },
+    {
+      "id": "009",
+      "company": "The Spur Group",
+      "vertical": "Cultural/Trend",
+      "contact": {
+        "name": "",
+        "title": "",
+        "email": "",
+        "phone": "",
+        "linkedinUrl": "",
+        "geography": "",
+        "source": ""
+      },
+      "status": "Completed",
+      "lastContactDate": "2025-09-10",
+      "nextAction": "",
+      "notes": "Creative agency L&L. Good engagement from creative team.",
+      "tags": ["Past Success", "Creative Agency", "Cultural"],
+      "lunchLearnHistory": [
+        {
+          "date": "2025-09-10",
+          "topic": "Creative agency trends and collaboration",
+          "attendees": 35,
+          "feedback": "Successful"
+        }
+      ],
+      "dateAdded": "2025-08-01"
+    },
+    {
+      "id": "010",
+      "company": "Daybreak",
+      "vertical": "Entertainment",
+      "contact": {
+        "name": "",
+        "title": "",
+        "email": "",
+        "phone": "",
+        "linkedinUrl": "",
+        "geography": "",
+        "source": ""
+      },
+      "status": "Completed",
+      "lastContactDate": "2025-08-15",
+      "nextAction": "",
+      "notes": "Entertainment platform L&L. Great insights on content strategy.",
+      "tags": ["Past Success", "Entertainment", "Content"],
+      "lunchLearnHistory": [
+        {
+          "date": "2025-08-15",
+          "topic": "Content strategy in entertainment",
+          "attendees": 38,
+          "feedback": "Successful"
+        }
+      ],
+      "dateAdded": "2025-07-01"
+    },
+    {
+      "id": "011",
+      "company": "Virgo",
+      "vertical": "Cultural/Trend",
+      "contact": {
+        "name": "",
+        "title": "",
+        "email": "",
+        "phone": "",
+        "linkedinUrl": "",
+        "geography": "",
+        "source": ""
+      },
+      "status": "Completed",
+      "lastContactDate": "2025-07-20",
+      "nextAction": "",
+      "notes": "Agency/Marketing L&L. Valuable perspectives on modern agency work.",
+      "tags": ["Past Success", "Agency", "Marketing"],
+      "lunchLearnHistory": [
+        {
+          "date": "2025-07-20",
+          "topic": "Modern agency practices",
+          "attendees": 32,
+          "feedback": "Successful"
+        }
+      ],
+      "dateAdded": "2025-06-01"
+    },
+    {
+      "id": "012",
+      "company": "OMD/cultura",
+      "vertical": "Cultural/Trend",
+      "contact": {
+        "name": "",
+        "title": "",
+        "email": "",
+        "phone": "",
+        "linkedinUrl": "",
+        "geography": "",
+        "source": ""
+      },
+      "status": "Completed",
+      "lastContactDate": "2025-06-10",
+      "nextAction": "",
+      "notes": "Media agency L&L. Great discussion on cultural insights in media planning.",
+      "tags": ["Past Success", "Media Agency", "Cultural"],
+      "lunchLearnHistory": [
+        {
+          "date": "2025-06-10",
+          "topic": "Cultural insights in media strategy",
+          "attendees": 42,
+          "feedback": "Successful"
+        }
+      ],
+      "dateAdded": "2025-05-01"
+    },
+    {
+      "id": "013",
+      "company": "Amazon Mountain",
+      "vertical": "Cultural/Trend",
+      "contact": {
+        "name": "",
+        "title": "",
+        "email": "",
+        "phone": "",
+        "linkedinUrl": "",
+        "geography": "",
+        "source": ""
+      },
+      "status": "Completed",
+      "lastContactDate": "2025-05-15",
+      "nextAction": "",
+      "notes": "Agency L&L. Interesting perspectives on brand building.",
+      "tags": ["Past Success", "Agency"],
+      "lunchLearnHistory": [
+        {
+          "date": "2025-05-15",
+          "topic": "Brand building strategies",
+          "attendees": 30,
+          "feedback": "Successful"
+        }
+      ],
+      "dateAdded": "2025-04-01"
+    },
+    {
+      "id": "014",
+      "company": "Mixie",
+      "vertical": "Streaming",
+      "contact": {
+        "name": "",
+        "title": "",
+        "email": "",
+        "phone": "",
+        "linkedinUrl": "",
+        "geography": "",
+        "source": ""
+      },
+      "status": "Completed",
+      "lastContactDate": "2025-04-10",
+      "nextAction": "",
+      "notes": "Streaming platform L&L. Good insights on emerging streaming tech.",
+      "tags": ["Past Success", "Streaming"],
+      "lunchLearnHistory": [
+        {
+          "date": "2025-04-10",
+          "topic": "Emerging streaming technologies",
+          "attendees": 36,
+          "feedback": "Successful"
+        }
+      ],
+      "dateAdded": "2025-03-01"
+    },
+    {
+      "id": "015",
+      "company": "IFC",
+      "vertical": "Entertainment",
+      "contact": {
+        "name": "",
+        "title": "",
+        "email": "",
+        "phone": "",
+        "linkedinUrl": "",
+        "geography": "",
+        "source": ""
+      },
+      "status": "Completed",
+      "lastContactDate": "2025-03-15",
+      "nextAction": "",
+      "notes": "Entertainment network L&L. Great discussion on content programming.",
+      "tags": ["Past Success", "Entertainment", "Network"],
+      "lunchLearnHistory": [
+        {
+          "date": "2025-03-15",
+          "topic": "Content programming and audience engagement",
+          "attendees": 34,
+          "feedback": "Successful"
+        }
+      ],
+      "dateAdded": "2025-02-01"
+    },
+    {
+      "id": "016",
+      "company": "Frameblade",
+      "vertical": "Cultural/Trend",
+      "contact": {
+        "name": "",
+        "title": "",
+        "email": "",
+        "phone": "",
+        "linkedinUrl": "",
+        "geography": "",
+        "source": ""
+      },
+      "status": "Completed",
+      "lastContactDate": "2025-02-10",
+      "nextAction": "",
+      "notes": "Innovative cultural partner. Strong session on trends.",
+      "tags": ["Past Success", "Cultural"],
+      "lunchLearnHistory": [
+        {
+          "date": "2025-02-10",
+          "topic": "Cultural trends and insights",
+          "attendees": 28,
+          "feedback": "Successful"
+        }
+      ],
+      "dateAdded": "2025-01-01"
+    },
+    {
+      "id": "017",
+      "company": "CIVVL",
+      "vertical": "Cultural/Trend",
+      "contact": {
+        "name": "",
+        "title": "",
+        "email": "",
+        "phone": "",
+        "linkedinUrl": "",
+        "geography": "",
+        "source": ""
+      },
+      "status": "Researching",
+      "lastContactDate": "",
+      "nextAction": "Research contact for 2025 L&L planning",
+      "notes": "Target partner for 2025. Cultural and trend-focused partner.",
+      "tags": ["Target Partner 2025", "Cultural"],
+      "lunchLearnHistory": [],
+      "dateAdded": "2026-02-04"
+    },
+    {
+      "id": "018",
+      "company": "KETCHUM",
+      "vertical": "Cultural/Trend",
+      "contact": {
+        "name": "",
+        "title": "",
+        "email": "",
+        "phone": "",
+        "linkedinUrl": "",
+        "geography": "",
+        "source": ""
+      },
+      "status": "Researching",
+      "lastContactDate": "",
+      "nextAction": "Research contact for 2025 L&L planning",
+      "notes": "Target partner for 2025. PR and communications expertise.",
+      "tags": ["Target Partner 2025", "PR/Communications"],
+      "lunchLearnHistory": [],
+      "dateAdded": "2026-02-04"
+    },
+    {
+      "id": "019",
+      "company": "RAPP",
+      "vertical": "Cultural/Trend",
+      "contact": {
+        "name": "",
+        "title": "",
+        "email": "",
+        "phone": "",
+        "linkedinUrl": "",
+        "geography": "",
+        "source": ""
+      },
+      "status": "Researching",
+      "lastContactDate": "",
+      "nextAction": "Research contact for 2025 L&L planning",
+      "notes": "Target partner for 2025. Marketing and advertising agency.",
+      "tags": ["Target Partner 2025", "Marketing"],
+      "lunchLearnHistory": [],
+      "dateAdded": "2026-02-04"
+    },
+    {
+      "id": "020",
+      "company": "duduh",
+      "vertical": "Social Media",
+      "contact": {
+        "name": "",
+        "title": "",
+        "email": "",
+        "phone": "",
+        "linkedinUrl": "",
+        "geography": "",
+        "source": ""
+      },
+      "status": "Researching",
+      "lastContactDate": "",
+      "nextAction": "Research contact for 2025 L&L planning",
+      "notes": "Target partner for 2025. Social media and branding focus.",
+      "tags": ["Target Partner 2025", "Social Media", "Branding"],
+      "lunchLearnHistory": [],
+      "dateAdded": "2026-02-04"
+    },
+    {
+      "id": "021",
+      "company": "PORTER NOVELLI",
+      "vertical": "Cultural/Trend",
+      "contact": {
+        "name": "",
+        "title": "",
+        "email": "",
+        "phone": "",
+        "linkedinUrl": "",
+        "geography": "",
+        "source": ""
+      },
+      "status": "Researching",
+      "lastContactDate": "",
+      "nextAction": "Research contact for 2025 L&L planning",
+      "notes": "Target partner for 2025. PR and communications agency.",
+      "tags": ["Target Partner 2025", "PR/Communications"],
+      "lunchLearnHistory": [],
+      "dateAdded": "2026-02-04"
+    },
+    {
+      "id": "022",
+      "company": "TRADEROUTE",
+      "vertical": "Cultural/Trend",
+      "contact": {
+        "name": "",
+        "title": "",
+        "email": "",
+        "phone": "",
+        "linkedinUrl": "",
+        "geography": "",
+        "source": ""
+      },
+      "status": "Researching",
+      "lastContactDate": "",
+      "nextAction": "Research contact for 2025 L&L planning",
+      "notes": "Target partner for 2025.",
+      "tags": ["Target Partner 2025"],
+      "lunchLearnHistory": [],
+      "dateAdded": "2026-02-04"
+    },
+    {
+      "id": "023",
+      "company": "PARLER",
+      "vertical": "Social Media",
+      "contact": {
+        "name": "",
+        "title": "",
+        "email": "",
+        "phone": "",
+        "linkedinUrl": "",
+        "geography": "",
+        "source": ""
+      },
+      "status": "Researching",
+      "lastContactDate": "",
+      "nextAction": "Research contact for 2025 L&L planning",
+      "notes": "Target partner for 2025. Social media platform.",
+      "tags": ["Target Partner 2025", "Social Platform"],
+      "lunchLearnHistory": [],
+      "dateAdded": "2026-02-04"
     }
   ],
   "verticals": [
@@ -210,9 +581,9 @@
     "Follow-Up Needed"
   ],
   "metadata": {
-    "lastUpdated": "2026-02-03",
-    "totalPartners": 8,
-    "activeOpportunities": 5,
-    "completedLunchLearns": 3
+    "lastUpdated": "2026-02-04",
+    "totalPartners": 23,
+    "activeOpportunities": 12,
+    "completedLunchLearns": 11
   }
 }

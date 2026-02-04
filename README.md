@@ -1,8 +1,8 @@
-# TBWA\Chiat\Day - Lunch & Learn Management System
+# Lunch & Learn Planner
 
 **A comprehensive system for planning, executing, and tracking Lunch & Learn sessions with media partners and industry leaders.**
 
-Built for the Connections Strategy team at TBWA\Chiat\Day LA.
+Built for agency teams to streamline their learning and development programs.
 
 ---
 
@@ -203,13 +203,12 @@ All tracked in dashboard, all data in JSON files, all communications from templa
 
 ## Team
 
-**Lead:** Joshua German - Connections Strategist
-**Team:** Elliot Klein (Account), John Simmons (Brand Strategist)
+Configure your team roles and vertical ownership to distribute the workload effectively.
 
-### Vertical Ownership (Suggested)
-- **Joshua**: AI/Emerging Tech, Social Media
-- **Elliot**: Streaming, Retail Media
-- **John**: OOH, Cultural/Trend, Podcast
+### Vertical Ownership (Example)
+- **Team Member 1**: AI/Emerging Tech, Social Media
+- **Team Member 2**: Streaming, Retail Media
+- **Team Member 3**: OOH, Cultural/Trend, Podcast
 
 ---
 
@@ -320,9 +319,9 @@ See `SYSTEM_PLAN.md` for architecture details
 
 ## License & Usage
 
-Built for internal use at TBWA\Chiat\Day LA.
+This system is designed for agency teams managing Lunch & Learn programs.
 
-For questions or issues, contact Joshua German, Connections Strategy.
+Customize the data files and templates to match your agency's brand and needs.
 
 ---
 

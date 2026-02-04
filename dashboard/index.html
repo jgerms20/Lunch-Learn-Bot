@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TBWA Lunch & Learn System</title>
+    <title>Lunch & Learn Planner</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -27,6 +27,15 @@
                     <span class="stat-number" id="completed-events">0</span>
                     <span class="stat-label">Completed L&Ls</span>
                 </div>
+                <button id="refresh-btn" class="refresh-btn" onclick="refreshData()" title="Refresh Data">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.5 10C17.5 14.1421 14.1421 17.5 10 17.5C5.85786 17.5 2.5 14.1421 2.5 10C2.5 5.85786 5.85786 2.5 10 2.5C12.0462 2.5 13.9021 3.35982 15.2426 4.75736M15.2426 4.75736L17.5 7.5M15.2426 4.75736L12.5 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="refresh-text">Refresh</span>
+                </button>
+            </div>
+            <div class="last-updated">
+                <span id="last-updated-time">Last updated: Never</span>
             </div>
         </header>
 
@@ -41,6 +50,17 @@
 
         <!-- Dashboard Tab -->
         <div id="dashboard-tab" class="tab-content active">
+            <!-- Goals Section -->
+            <section class="section goals-section">
+                <div class="section-header-with-icon">
+                    <h2>🎯 2025 L&L Goals</h2>
+                    <p class="section-subtitle">Our strategic pillars for success</p>
+                </div>
+                <div id="goals-grid" class="goals-grid">
+                    <!-- Will be populated by JavaScript -->
+                </div>
+            </section>
+
             <section class="section">
                 <h2>Urgent Opportunities</h2>
                 <div id="urgent-opportunities" class="card-grid">
@@ -73,7 +93,15 @@
         <!-- Partner Database Tab -->
         <div id="partners-tab" class="tab-content">
             <div class="section-header">
-                <h2>Partner Database</h2>
+                <div class="header-with-action">
+                    <h2>Partner Database</h2>
+                    <button class="btn-primary" onclick="openAddPartnerModal()">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 8px;">
+                            <path d="M8 3.33334V12.6667M3.33334 8H12.6667" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        Add Partner
+                    </button>
+                </div>
                 <div class="filters">
                     <select id="vertical-filter" onchange="filterPartners()">
                         <option value="all">All Verticals</option>
@@ -179,6 +207,188 @@
                 </div>
             </div>
         </div>
+
+        <!-- Add Partner Modal -->
+        <div id="add-partner-modal" class="modal">
+            <div class="modal-content modal-form">
+                <div class="modal-header">
+                    <h2>Add New Partner</h2>
+                    <span class="close" onclick="closeAddPartnerModal()">&times;</span>
+                </div>
+                <form id="add-partner-form" onsubmit="saveNewPartner(event)">
+                    <div class="form-group">
+                        <label for="partner-company">Company Name *</label>
+                        <input type="text" id="partner-company" required placeholder="e.g., Meta, TikTok, Netflix">
+                    </div>
+                    <div class="form-group">
+                        <label for="partner-vertical">Vertical *</label>
+                        <select id="partner-vertical" required>
+                            <option value="">Select vertical...</option>
+                            <option value="Social Media">Social Media</option>
+                            <option value="Streaming">Streaming</option>
+                            <option value="Out-of-Home">Out-of-Home</option>
+                            <option value="Podcast/Audio">Podcast/Audio</option>
+                            <option value="AI/Emerging Tech">AI/Emerging Tech</option>
+                            <option value="Cultural/Trend">Cultural/Trend</option>
+                            <option value="Retail Media">Retail Media</option>
+                            <option value="Gaming">Gaming</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="partner-contact-name">Contact Name</label>
+                            <input type="text" id="partner-contact-name" placeholder="First Last">
+                        </div>
+                        <div class="form-group">
+                            <label for="partner-contact-title">Contact Title</label>
+                            <input type="text" id="partner-contact-title" placeholder="e.g., Partnership Manager">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="partner-contact-email">Email</label>
+                            <input type="email" id="partner-contact-email" placeholder="email@company.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="partner-geography">Geography</label>
+                            <input type="text" id="partner-geography" placeholder="e.g., LA, SF, NYC">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="partner-notes">Notes</label>
+                        <textarea id="partner-notes" rows="3" placeholder="Any relevant information about this partner..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="partner-tags">Tags (comma-separated)</label>
+                        <input type="text" id="partner-tags" placeholder="e.g., High Priority, LA-Based, Creative Focus">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn-secondary" onclick="closeAddPartnerModal()">Cancel</button>
+                        <button type="submit" class="btn-primary">Add Partner</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Edit Partner Modal -->
+        <div id="edit-partner-modal" class="modal">
+            <div class="modal-content modal-form">
+                <div class="modal-header">
+                    <h2>Edit Partner</h2>
+                    <span class="close" onclick="closeEditPartnerModal()">&times;</span>
+                </div>
+                <form id="edit-partner-form" onsubmit="savePartnerEdits(event)">
+                    <input type="hidden" id="edit-partner-id">
+                    <div class="form-group">
+                        <label for="edit-partner-company">Company Name *</label>
+                        <input type="text" id="edit-partner-company" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="edit-partner-vertical">Vertical *</label>
+                        <select id="edit-partner-vertical" required>
+                            <option value="Social Media">Social Media</option>
+                            <option value="Streaming">Streaming</option>
+                            <option value="Out-of-Home">Out-of-Home</option>
+                            <option value="Podcast/Audio">Podcast/Audio</option>
+                            <option value="AI/Emerging Tech">AI/Emerging Tech</option>
+                            <option value="Cultural/Trend">Cultural/Trend</option>
+                            <option value="Retail Media">Retail Media</option>
+                            <option value="Gaming">Gaming</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="edit-partner-status">Status</label>
+                        <select id="edit-partner-status">
+                            <option value="Researching">Researching</option>
+                            <option value="Contacted">Contacted</option>
+                            <option value="In Conversation">In Conversation</option>
+                            <option value="Scheduled">Scheduled</option>
+                            <option value="Completed">Completed</option>
+                            <option value="Declined">Declined</option>
+                            <option value="Follow-Up Needed">Follow-Up Needed</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="edit-partner-contact-name">Contact Name</label>
+                            <input type="text" id="edit-partner-contact-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="edit-partner-contact-title">Contact Title</label>
+                            <input type="text" id="edit-partner-contact-title">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="edit-partner-contact-email">Email</label>
+                            <input type="email" id="edit-partner-contact-email">
+                        </div>
+                        <div class="form-group">
+                            <label for="edit-partner-geography">Geography</label>
+                            <input type="text" id="edit-partner-geography">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="edit-partner-notes">Notes</label>
+                        <textarea id="edit-partner-notes" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="edit-partner-tags">Tags (comma-separated)</label>
+                        <input type="text" id="edit-partner-tags">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn-secondary" onclick="closeEditPartnerModal()">Cancel</button>
+                        <button type="submit" class="btn-primary">Save Changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Research Contact Modal -->
+        <div id="research-modal" class="modal">
+            <div class="modal-content modal-research">
+                <div class="modal-header">
+                    <h2>🔍 Research Contact</h2>
+                    <span class="close" onclick="closeResearchModal()">&times;</span>
+                </div>
+                <div id="research-content">
+                    <div class="research-status">
+                        <div class="searching-animation">
+                            <div class="spinner"></div>
+                            <p id="research-status-text">Initializing research...</p>
+                        </div>
+                        <ul class="research-steps" id="research-steps">
+                            <!-- Will be populated by JavaScript -->
+                        </ul>
+                    </div>
+                    <div class="research-results" id="research-results" style="display: none;">
+                        <!-- Will be populated by JavaScript -->
+                    </div>
+                    <div class="research-manual" id="research-manual">
+                        <h3>Manual Research Assistant</h3>
+                        <p>Try these search queries:</p>
+                        <div id="search-queries">
+                            <!-- Will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-secondary" onclick="closeResearchModal()">Close</button>
+                    <button type="button" class="btn-primary" id="apply-research-btn" style="display: none;" onclick="applyResearchResults()">Apply Results</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Loading Overlay -->
+        <div id="loading-overlay" class="loading-overlay" style="display: none;">
+            <div class="loading-content">
+                <div class="spinner-large"></div>
+                <p id="loading-text">Loading...</p>
+            </div>
+        </div>
+
+        <!-- Toast Notifications -->
+        <div id="toast-container" class="toast-container"></div>
     </div>
 
     <script src="app.js"></script>

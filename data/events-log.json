@@ -92,13 +92,395 @@
         ],
         "notes": "Highly successful, good mix of creative and media teams attending"
       }
+    },
+    {
+      "id": "E004",
+      "partnerId": "009",
+      "company": "The Spur Group",
+      "date": "2025-09-10",
+      "time": "12:00 PM - 1:00 PM",
+      "location": "TBWA Main Conference Room",
+      "format": "In-Person",
+      "speaker": {
+        "name": "",
+        "title": ""
+      },
+      "topic": "Creative agency trends and collaboration",
+      "description": "Modern creative agency approaches and collaboration strategies",
+      "targetAudience": "Creative + Strategy",
+      "estimatedAttendees": 35,
+      "actualAttendees": 35,
+      "food": "Mediterranean Mix",
+      "status": "Completed",
+      "internalPromoSent": true,
+      "deckReceived": true,
+      "feedback": {
+        "rating": 4.0,
+        "keyTakeaways": [
+          "Creative collaboration best practices",
+          "Agency-client dynamics",
+          "Innovation in creative process"
+        ],
+        "notes": "Good engagement from creative team"
+      }
+    },
+    {
+      "id": "E005",
+      "partnerId": "010",
+      "company": "Daybreak",
+      "date": "2025-08-15",
+      "time": "12:00 PM - 1:00 PM",
+      "location": "TBWA Main Conference Room",
+      "format": "In-Person",
+      "speaker": {
+        "name": "",
+        "title": ""
+      },
+      "topic": "Content strategy in entertainment",
+      "description": "Entertainment content strategy and audience engagement",
+      "targetAudience": "All Agency",
+      "estimatedAttendees": 40,
+      "actualAttendees": 38,
+      "food": "Chipotle",
+      "status": "Completed",
+      "internalPromoSent": true,
+      "deckReceived": true,
+      "feedback": {
+        "rating": 4.2,
+        "keyTakeaways": [
+          "Entertainment content planning",
+          "Audience engagement strategies",
+          "Platform-specific content approaches"
+        ],
+        "notes": "Great insights on content strategy"
+      }
+    },
+    {
+      "id": "E006",
+      "partnerId": "011",
+      "company": "Virgo",
+      "date": "2025-07-20",
+      "time": "12:00 PM - 1:00 PM",
+      "location": "TBWA Main Conference Room",
+      "format": "In-Person",
+      "speaker": {
+        "name": "",
+        "title": ""
+      },
+      "topic": "Modern agency practices",
+      "description": "Contemporary agency work and marketing trends",
+      "targetAudience": "All Agency",
+      "estimatedAttendees": 35,
+      "actualAttendees": 32,
+      "food": "Sweetgreen",
+      "status": "Completed",
+      "internalPromoSent": true,
+      "deckReceived": true,
+      "feedback": {
+        "rating": 3.9,
+        "keyTakeaways": [
+          "Modern agency structures",
+          "Marketing evolution",
+          "Client relationship management"
+        ],
+        "notes": "Valuable perspectives on modern agency work"
+      }
+    },
+    {
+      "id": "E007",
+      "partnerId": "012",
+      "company": "OMD/cultura",
+      "date": "2025-06-10",
+      "time": "12:00 PM - 1:00 PM",
+      "location": "TBWA Main Conference Room",
+      "format": "In-Person",
+      "speaker": {
+        "name": "",
+        "title": ""
+      },
+      "topic": "Cultural insights in media strategy",
+      "description": "Leveraging cultural insights for effective media planning",
+      "targetAudience": "Media + Strategy",
+      "estimatedAttendees": 45,
+      "actualAttendees": 42,
+      "food": "Mendocino Farms",
+      "status": "Completed",
+      "internalPromoSent": true,
+      "deckReceived": true,
+      "feedback": {
+        "rating": 4.4,
+        "keyTakeaways": [
+          "Cultural context in media",
+          "Diverse audience targeting",
+          "Inclusive media strategies"
+        ],
+        "notes": "Great discussion on cultural insights"
+      }
+    },
+    {
+      "id": "E008",
+      "partnerId": "013",
+      "company": "Amazon Mountain",
+      "date": "2025-05-15",
+      "time": "12:00 PM - 1:00 PM",
+      "location": "TBWA Main Conference Room",
+      "format": "In-Person",
+      "speaker": {
+        "name": "",
+        "title": ""
+      },
+      "topic": "Brand building strategies",
+      "description": "Modern approaches to brand development and positioning",
+      "targetAudience": "Strategy + Creative",
+      "estimatedAttendees": 32,
+      "actualAttendees": 30,
+      "food": "Chipotle",
+      "status": "Completed",
+      "internalPromoSent": true,
+      "deckReceived": true,
+      "feedback": {
+        "rating": 4.1,
+        "keyTakeaways": [
+          "Brand positioning fundamentals",
+          "Building brand equity",
+          "Strategic brand development"
+        ],
+        "notes": "Interesting perspectives on brand building"
+      }
+    },
+    {
+      "id": "E009",
+      "partnerId": "014",
+      "company": "Mixie",
+      "date": "2025-04-10",
+      "time": "12:00 PM - 1:00 PM",
+      "location": "TBWA Main Conference Room",
+      "format": "In-Person",
+      "speaker": {
+        "name": "",
+        "title": ""
+      },
+      "topic": "Emerging streaming technologies",
+      "description": "New technologies shaping the streaming landscape",
+      "targetAudience": "Media + Technology",
+      "estimatedAttendees": 38,
+      "actualAttendees": 36,
+      "food": "Sweetgreen",
+      "status": "Completed",
+      "internalPromoSent": true,
+      "deckReceived": true,
+      "feedback": {
+        "rating": 4.3,
+        "keyTakeaways": [
+          "Streaming tech innovations",
+          "User experience in streaming",
+          "Future of streaming platforms"
+        ],
+        "notes": "Good insights on emerging streaming tech"
+      }
+    },
+    {
+      "id": "E010",
+      "partnerId": "015",
+      "company": "IFC",
+      "date": "2025-03-15",
+      "time": "12:00 PM - 1:00 PM",
+      "location": "TBWA Main Conference Room",
+      "format": "In-Person",
+      "speaker": {
+        "name": "",
+        "title": ""
+      },
+      "topic": "Content programming and audience engagement",
+      "description": "Network programming strategies and audience development",
+      "targetAudience": "All Agency",
+      "estimatedAttendees": 36,
+      "actualAttendees": 34,
+      "food": "Mediterranean Mix",
+      "status": "Completed",
+      "internalPromoSent": true,
+      "deckReceived": true,
+      "feedback": {
+        "rating": 4.2,
+        "keyTakeaways": [
+          "Programming strategy",
+          "Audience development",
+          "Content curation"
+        ],
+        "notes": "Great discussion on content programming"
+      }
+    },
+    {
+      "id": "E011",
+      "partnerId": "016",
+      "company": "Frameblade",
+      "date": "2025-02-10",
+      "time": "12:00 PM - 1:00 PM",
+      "location": "TBWA Main Conference Room",
+      "format": "In-Person",
+      "speaker": {
+        "name": "",
+        "title": ""
+      },
+      "topic": "Cultural trends and insights",
+      "description": "Understanding and leveraging cultural trends",
+      "targetAudience": "Strategy + Creative",
+      "estimatedAttendees": 30,
+      "actualAttendees": 28,
+      "food": "Chipotle",
+      "status": "Completed",
+      "internalPromoSent": true,
+      "deckReceived": true,
+      "feedback": {
+        "rating": 4.0,
+        "keyTakeaways": [
+          "Cultural trend identification",
+          "Trend application in marketing",
+          "Cultural relevance"
+        ],
+        "notes": "Strong session on trends"
+      }
     }
   ],
-  "upcoming": [],
+  "upcoming": [
+    {
+      "id": "U001",
+      "partnerId": "017",
+      "company": "CIVVL",
+      "proposedDate": "Q2 2026",
+      "estimatedTime": "12:00 PM - 1:00 PM",
+      "location": "TBD",
+      "format": "TBD",
+      "speaker": {
+        "name": "TBD",
+        "title": "TBD"
+      },
+      "proposedTopic": "Cultural trends and insights",
+      "description": "Cultural partner session for 2025 L&L program",
+      "targetAudience": "All Agency",
+      "estimatedAttendees": 40,
+      "status": "Proposed",
+      "priority": "Medium"
+    },
+    {
+      "id": "U002",
+      "partnerId": "018",
+      "company": "KETCHUM",
+      "proposedDate": "Q2 2026",
+      "estimatedTime": "12:00 PM - 1:00 PM",
+      "location": "TBD",
+      "format": "TBD",
+      "speaker": {
+        "name": "TBD",
+        "title": "TBD"
+      },
+      "proposedTopic": "PR and communications strategies",
+      "description": "PR/Communications expertise for agency learning",
+      "targetAudience": "All Agency",
+      "estimatedAttendees": 40,
+      "status": "Proposed",
+      "priority": "Medium"
+    },
+    {
+      "id": "U003",
+      "partnerId": "019",
+      "company": "RAPP",
+      "proposedDate": "Q2 2026",
+      "estimatedTime": "12:00 PM - 1:00 PM",
+      "location": "TBD",
+      "format": "TBD",
+      "speaker": {
+        "name": "TBD",
+        "title": "TBD"
+      },
+      "proposedTopic": "Marketing and advertising innovation",
+      "description": "Marketing agency insights and best practices",
+      "targetAudience": "All Agency",
+      "estimatedAttendees": 40,
+      "status": "Proposed",
+      "priority": "Medium"
+    },
+    {
+      "id": "U004",
+      "partnerId": "020",
+      "company": "duduh",
+      "proposedDate": "Q2 2026",
+      "estimatedTime": "12:00 PM - 1:00 PM",
+      "location": "TBD",
+      "format": "TBD",
+      "speaker": {
+        "name": "TBD",
+        "title": "TBD"
+      },
+      "proposedTopic": "Social media and branding",
+      "description": "Social media strategy and brand building",
+      "targetAudience": "All Agency",
+      "estimatedAttendees": 40,
+      "status": "Proposed",
+      "priority": "Medium"
+    },
+    {
+      "id": "U005",
+      "partnerId": "021",
+      "company": "PORTER NOVELLI",
+      "proposedDate": "Q3 2026",
+      "estimatedTime": "12:00 PM - 1:00 PM",
+      "location": "TBD",
+      "format": "TBD",
+      "speaker": {
+        "name": "TBD",
+        "title": "TBD"
+      },
+      "proposedTopic": "PR and communications excellence",
+      "description": "PR agency perspectives and strategies",
+      "targetAudience": "All Agency",
+      "estimatedAttendees": 40,
+      "status": "Proposed",
+      "priority": "Medium"
+    },
+    {
+      "id": "U006",
+      "partnerId": "022",
+      "company": "TRADEROUTE",
+      "proposedDate": "Q3 2026",
+      "estimatedTime": "12:00 PM - 1:00 PM",
+      "location": "TBD",
+      "format": "TBD",
+      "speaker": {
+        "name": "TBD",
+        "title": "TBD"
+      },
+      "proposedTopic": "Cultural trends and insights",
+      "description": "Cultural partner learning session",
+      "targetAudience": "All Agency",
+      "estimatedAttendees": 40,
+      "status": "Proposed",
+      "priority": "Medium"
+    },
+    {
+      "id": "U007",
+      "partnerId": "023",
+      "company": "PARLER",
+      "proposedDate": "Q3 2026",
+      "estimatedTime": "12:00 PM - 1:00 PM",
+      "location": "TBD",
+      "format": "TBD",
+      "speaker": {
+        "name": "TBD",
+        "title": "TBD"
+      },
+      "proposedTopic": "Social media platform insights",
+      "description": "Social platform strategy and engagement",
+      "targetAudience": "Media + Strategy",
+      "estimatedAttendees": 40,
+      "status": "Proposed",
+      "priority": "Medium"
+    }
+  ],
   "metadata": {
-    "lastUpdated": "2026-02-03",
-    "totalEvents": 3,
-    "upcomingEvents": 0,
-    "avgAttendance": 45
+    "lastUpdated": "2026-02-04",
+    "totalEvents": 11,
+    "upcomingEvents": 7,
+    "avgAttendance": 37
   }
 }

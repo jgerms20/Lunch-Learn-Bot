@@ -1,0 +1,45 @@
+{
+  "goals": [
+    {
+      "id": "G1",
+      "category": "Build a Spark of Culture",
+      "description": "Create cultural moments and connections through engaging L&Ls",
+      "target": 12,
+      "current": 12,
+      "unit": "L&Ls completed",
+      "icon": "✨"
+    },
+    {
+      "id": "G2",
+      "category": "Spread & Amplify Knowledge",
+      "description": "Share expertise and insights across the agency",
+      "target": 8,
+      "current": 8,
+      "unit": "verticals covered",
+      "icon": "📢"
+    },
+    {
+      "id": "G3",
+      "category": "Technology & Innovation",
+      "description": "Stay ahead of emerging platforms and technologies",
+      "target": 5,
+      "current": 2,
+      "unit": "innovation partners",
+      "icon": "🚀"
+    },
+    {
+      "id": "G4",
+      "category": "Invest Building & Stimulate Creativity",
+      "description": "Inspire creative thinking and fresh perspectives",
+      "target": 15,
+      "current": 12,
+      "unit": "creative sessions",
+      "icon": "💡"
+    }
+  ],
+  "metadata": {
+    "lastUpdated": "2026-02-04",
+    "year": 2025,
+    "totalGoals": 4
+  }
+}
