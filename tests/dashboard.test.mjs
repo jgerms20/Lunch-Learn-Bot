@@ -24,4 +24,5 @@ test('source data retains partner, outreach, event, and suggestion records', asy
 test('Vercel serves the dashboard at the project root', async () => {
   const config = JSON.parse(await readFile(new URL('../vercel.json', import.meta.url), 'utf8'));
   assert.deepEqual(config.rewrites[0], { source: '/', destination: '/dashboard/index.html' });
+  assert.equal(config.outputDirectory, '.');
 });
