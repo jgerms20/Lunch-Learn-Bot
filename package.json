@@ -1,0 +1,5 @@
+{
+  "name": "lunch-learn-bot",
+  "private": true,
+  "scripts": { "test": "node --test tests/*.test.mjs", "build": "node scripts/verify-build.mjs" }
+}
