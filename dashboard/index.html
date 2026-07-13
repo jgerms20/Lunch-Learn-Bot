@@ -1,397 +1,46 @@
-<!-- Cache Buster: 2026-02-04-01:10:00 -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lunch & Learn Planner</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#ffffff" />
+  <title>Lunch & Learn | AgencyThings</title>
+  <link rel="stylesheet" href="/dashboard/styles.css" />
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <!-- Header -->
-        <header>
-            <div class="logo">
-                <h1>Lunch & Learn System</h1>
-                <p>TBWA\Chiat\Day LA</p>
-            </div>
-            <div class="header-stats">
-                <div class="stat-box">
-                    <span class="stat-number" id="total-partners">0</span>
-                    <span class="stat-label">Total Partners</span>
-                </div>
-                <div class="stat-box">
-                    <span class="stat-number" id="active-outreach">0</span>
-                    <span class="stat-label">Active Outreach</span>
-                </div>
-                <div class="stat-box">
-                    <span class="stat-number" id="completed-events">0</span>
-                    <span class="stat-label">Completed L&Ls</span>
-                </div>
-                <button id="refresh-btn" class="refresh-btn" onclick="refreshData()" title="Refresh Data">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M17.5 10C17.5 14.1421 14.1421 17.5 10 17.5C5.85786 17.5 2.5 14.1421 2.5 10C2.5 5.85786 5.85786 2.5 10 2.5C12.0462 2.5 13.9021 3.35982 15.2426 4.75736M15.2426 4.75736L17.5 7.5M15.2426 4.75736L12.5 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <span class="refresh-text">Refresh</span>
-                </button>
-            </div>
-            <div class="last-updated">
-                <span id="last-updated-time">Last updated: Never</span>
-            </div>
-        </header>
+  <header class="topbar">
+    <a class="back" href="https://jgerms20.github.io/AgencyThings/"><i data-lucide="arrow-left"></i><span>Joshua's AgencyThings</span></a>
+    <div class="title"><strong>Lunch & Learn</strong><span>Programming desk</span></div>
+    <button class="primary" type="button" data-open-planner><i data-lucide="calendar-plus"></i>Plan a session</button>
+  </header>
+  <div class="app-shell">
+    <aside class="nav-rail">
+      <nav aria-label="Lunch and Learn sections">
+        <button class="active" data-view="today"><i data-lucide="calendar-days"></i>Today</button>
+        <button data-view="pipeline"><i data-lucide="list-todo"></i>Pipeline</button>
+        <button data-view="partners"><i data-lucide="users"></i>Partners</button>
+        <button data-view="calendar"><i data-lucide="calendar"></i>Calendar</button>
+        <button data-view="templates"><i data-lucide="files"></i>Templates</button>
+        <button data-view="archive"><i data-lucide="archive"></i>Archive</button>
+      </nav>
+      <div class="rail-photo"><img src="/dashboard/assets/lunch-learn-session.png" alt="Colleagues learning together over lunch" /><span>Build a program people make time for.</span></div>
+    </aside>
+    <main class="workspace">
+      <section class="filters"><label><i data-lucide="search"></i><input type="search" data-search placeholder="Search partners, topics, next actions" /></label><select data-vertical-filter><option value="all">All verticals</option></select><p data-status role="status">Program data loaded.</p></section>
+      <section data-main-view aria-live="polite"><div class="loading">Loading the programming desk…</div></section>
+    </main>
+    <aside class="insight-rail" data-insight-rail></aside>
+  </div>
 
-        <!-- Navigation -->
-        <nav class="tabs">
-            <button class="tab-btn active" onclick="showTab('dashboard')">Dashboard</button>
-            <button class="tab-btn" onclick="showTab('partners')">Partner Database</button>
-            <button class="tab-btn" onclick="showTab('outreach')">Outreach Tracker</button>
-            <button class="tab-btn" onclick="showTab('events')">Events</button>
-            <button class="tab-btn" onclick="showTab('templates')">Templates</button>
-        </nav>
-
-        <!-- Dashboard Tab -->
-        <div id="dashboard-tab" class="tab-content active">
-            <!-- Goals Section -->
-            <section class="section goals-section">
-                <div class="section-header-with-icon">
-                    <h2>🎯 2025 L&L Goals</h2>
-                    <p class="section-subtitle">Our strategic pillars for success</p>
-                </div>
-                <div id="goals-grid" class="goals-grid">
-                    <!-- Will be populated by JavaScript -->
-                </div>
-            </section>
-
-            <section class="section">
-                <h2>Urgent Opportunities</h2>
-                <div id="urgent-opportunities" class="card-grid">
-                    <!-- Will be populated by JavaScript -->
-                </div>
-            </section>
-
-            <section class="section">
-                <h2>Upcoming Events</h2>
-                <div id="upcoming-events" class="event-list">
-                    <!-- Will be populated by JavaScript -->
-                </div>
-            </section>
-
-            <section class="section">
-                <h2>Vertical Distribution</h2>
-                <div id="vertical-distribution" class="chart">
-                    <!-- Will be populated by JavaScript -->
-                </div>
-            </section>
-
-            <section class="section">
-                <h2>Recent Activity</h2>
-                <div id="recent-activity" class="activity-list">
-                    <!-- Will be populated by JavaScript -->
-                </div>
-            </section>
-        </div>
-
-        <!-- Partner Database Tab -->
-        <div id="partners-tab" class="tab-content">
-            <div class="section-header">
-                <div class="header-with-action">
-                    <h2>Partner Database</h2>
-                    <button class="btn-primary" onclick="openAddPartnerModal()">
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 8px;">
-                            <path d="M8 3.33334V12.6667M3.33334 8H12.6667" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
-                        Add Partner
-                    </button>
-                </div>
-                <div class="filters">
-                    <select id="vertical-filter" onchange="filterPartners()">
-                        <option value="all">All Verticals</option>
-                    </select>
-                    <select id="status-filter" onchange="filterPartners()">
-                        <option value="all">All Statuses</option>
-                    </select>
-                    <input type="text" id="search-input" placeholder="Search partners..." onkeyup="filterPartners()">
-                </div>
-            </div>
-            <div id="partners-table" class="table-container">
-                <!-- Will be populated by JavaScript -->
-            </div>
-        </div>
-
-        <!-- Outreach Tracker Tab -->
-        <div id="outreach-tab" class="tab-content">
-            <h2>Outreach Tracker</h2>
-            <div id="outreach-board" class="kanban-board">
-                <!-- Will be populated by JavaScript -->
-            </div>
-        </div>
-
-        <!-- Events Tab -->
-        <div id="events-tab" class="tab-content">
-            <h2>Events Calendar</h2>
-            <div class="section">
-                <h3>Past Events</h3>
-                <div id="past-events" class="event-grid">
-                    <!-- Will be populated by JavaScript -->
-                </div>
-            </div>
-        </div>
-
-        <!-- Templates Tab -->
-        <div id="templates-tab" class="tab-content">
-            <h2>Template Library</h2>
-            <div class="template-sections">
-                <div class="section">
-                    <h3>Email Templates</h3>
-                    <div id="email-templates" class="template-list">
-                        <div class="template-item">
-                            <h4>First Outreach</h4>
-                            <p>Initial partner outreach email</p>
-                            <button onclick="viewTemplate('templates/emails/first-outreach.md')">View Template</button>
-                        </div>
-                        <div class="template-item">
-                            <h4>Follow-Up</h4>
-                            <p>7-10 day follow-up email</p>
-                            <button onclick="viewTemplate('templates/emails/follow-up.md')">View Template</button>
-                        </div>
-                        <div class="template-item">
-                            <h4>Scheduling</h4>
-                            <p>Scheduling coordination email</p>
-                            <button onclick="viewTemplate('templates/emails/scheduling.md')">View Template</button>
-                        </div>
-                        <div class="template-item">
-                            <h4>Confirmation</h4>
-                            <p>Event confirmation email</p>
-                            <button onclick="viewTemplate('templates/emails/confirmation.md')">View Template</button>
-                        </div>
-                        <div class="template-item">
-                            <h4>Thank You</h4>
-                            <p>Post-event thank you email</p>
-                            <button onclick="viewTemplate('templates/emails/thank-you.md')">View Template</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="section">
-                    <h3>Internal Communications</h3>
-                    <div id="internal-templates" class="template-list">
-                        <div class="template-item">
-                            <h4>Email Announcement (1 Week)</h4>
-                            <p>Internal announcement email</p>
-                            <button onclick="viewTemplate('templates/internal-comms/email-announcement.md')">View Template</button>
-                        </div>
-                        <div class="template-item">
-                            <h4>Reminder - Tomorrow</h4>
-                            <p>Day before reminder</p>
-                            <button onclick="viewTemplate('templates/internal-comms/email-reminder-tomorrow.md')">View Template</button>
-                        </div>
-                        <div class="template-item">
-                            <h4>Reminder - Today</h4>
-                            <p>Day of reminder</p>
-                            <button onclick="viewTemplate('templates/internal-comms/email-reminder-today.md')">View Template</button>
-                        </div>
-                        <div class="template-item">
-                            <h4>Teams Messages</h4>
-                            <p>Teams announcement templates</p>
-                            <button onclick="viewTemplate('templates/internal-comms/teams-message.md')">View Template</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Template Modal -->
-        <div id="template-modal" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal()">&times;</span>
-                <div id="template-content">
-                    <!-- Will be populated by JavaScript -->
-                </div>
-            </div>
-        </div>
-
-        <!-- Add Partner Modal -->
-        <div id="add-partner-modal" class="modal">
-            <div class="modal-content modal-form">
-                <div class="modal-header">
-                    <h2>Add New Partner</h2>
-                    <span class="close" onclick="closeAddPartnerModal()">&times;</span>
-                </div>
-                <form id="add-partner-form" onsubmit="saveNewPartner(event)">
-                    <div class="form-group">
-                        <label for="partner-company">Company Name *</label>
-                        <input type="text" id="partner-company" required placeholder="e.g., Meta, TikTok, Netflix">
-                    </div>
-                    <div class="form-group">
-                        <label for="partner-vertical">Vertical *</label>
-                        <select id="partner-vertical" required>
-                            <option value="">Select vertical...</option>
-                            <option value="Social Media">Social Media</option>
-                            <option value="Streaming">Streaming</option>
-                            <option value="Out-of-Home">Out-of-Home</option>
-                            <option value="Podcast/Audio">Podcast/Audio</option>
-                            <option value="AI/Emerging Tech">AI/Emerging Tech</option>
-                            <option value="Cultural/Trend">Cultural/Trend</option>
-                            <option value="Retail Media">Retail Media</option>
-                            <option value="Gaming">Gaming</option>
-                        </select>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="partner-contact-name">Contact Name</label>
-                            <input type="text" id="partner-contact-name" placeholder="First Last">
-                        </div>
-                        <div class="form-group">
-                            <label for="partner-contact-title">Contact Title</label>
-                            <input type="text" id="partner-contact-title" placeholder="e.g., Partnership Manager">
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="partner-contact-email">Email</label>
-                            <input type="email" id="partner-contact-email" placeholder="email@company.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="partner-geography">Geography</label>
-                            <input type="text" id="partner-geography" placeholder="e.g., LA, SF, NYC">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="partner-notes">Notes</label>
-                        <textarea id="partner-notes" rows="3" placeholder="Any relevant information about this partner..."></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="partner-tags">Tags (comma-separated)</label>
-                        <input type="text" id="partner-tags" placeholder="e.g., High Priority, LA-Based, Creative Focus">
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn-secondary" onclick="closeAddPartnerModal()">Cancel</button>
-                        <button type="submit" class="btn-primary">Add Partner</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-
-        <!-- Edit Partner Modal -->
-        <div id="edit-partner-modal" class="modal">
-            <div class="modal-content modal-form">
-                <div class="modal-header">
-                    <h2>Edit Partner</h2>
-                    <span class="close" onclick="closeEditPartnerModal()">&times;</span>
-                </div>
-                <form id="edit-partner-form" onsubmit="savePartnerEdits(event)">
-                    <input type="hidden" id="edit-partner-id">
-                    <div class="form-group">
-                        <label for="edit-partner-company">Company Name *</label>
-                        <input type="text" id="edit-partner-company" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="edit-partner-vertical">Vertical *</label>
-                        <select id="edit-partner-vertical" required>
-                            <option value="Social Media">Social Media</option>
-                            <option value="Streaming">Streaming</option>
-                            <option value="Out-of-Home">Out-of-Home</option>
-                            <option value="Podcast/Audio">Podcast/Audio</option>
-                            <option value="AI/Emerging Tech">AI/Emerging Tech</option>
-                            <option value="Cultural/Trend">Cultural/Trend</option>
-                            <option value="Retail Media">Retail Media</option>
-                            <option value="Gaming">Gaming</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="edit-partner-status">Status</label>
-                        <select id="edit-partner-status">
-                            <option value="Researching">Researching</option>
-                            <option value="Contacted">Contacted</option>
-                            <option value="In Conversation">In Conversation</option>
-                            <option value="Scheduled">Scheduled</option>
-                            <option value="Completed">Completed</option>
-                            <option value="Declined">Declined</option>
-                            <option value="Follow-Up Needed">Follow-Up Needed</option>
-                        </select>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="edit-partner-contact-name">Contact Name</label>
-                            <input type="text" id="edit-partner-contact-name">
-                        </div>
-                        <div class="form-group">
-                            <label for="edit-partner-contact-title">Contact Title</label>
-                            <input type="text" id="edit-partner-contact-title">
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="edit-partner-contact-email">Email</label>
-                            <input type="email" id="edit-partner-contact-email">
-                        </div>
-                        <div class="form-group">
-                            <label for="edit-partner-geography">Geography</label>
-                            <input type="text" id="edit-partner-geography">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="edit-partner-notes">Notes</label>
-                        <textarea id="edit-partner-notes" rows="3"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="edit-partner-tags">Tags (comma-separated)</label>
-                        <input type="text" id="edit-partner-tags">
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn-secondary" onclick="closeEditPartnerModal()">Cancel</button>
-                        <button type="submit" class="btn-primary">Save Changes</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-
-        <!-- Research Contact Modal -->
-        <div id="research-modal" class="modal">
-            <div class="modal-content modal-research">
-                <div class="modal-header">
-                    <h2>🔍 Research Contact</h2>
-                    <span class="close" onclick="closeResearchModal()">&times;</span>
-                </div>
-                <div id="research-content">
-                    <div class="research-status">
-                        <div class="searching-animation">
-                            <div class="spinner"></div>
-                            <p id="research-status-text">Initializing research...</p>
-                        </div>
-                        <ul class="research-steps" id="research-steps">
-                            <!-- Will be populated by JavaScript -->
-                        </ul>
-                    </div>
-                    <div class="research-results" id="research-results" style="display: none;">
-                        <!-- Will be populated by JavaScript -->
-                    </div>
-                    <div class="research-manual" id="research-manual">
-                        <h3>Manual Research Assistant</h3>
-                        <p>Try these search queries:</p>
-                        <div id="search-queries">
-                            <!-- Will be populated by JavaScript -->
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn-secondary" onclick="closeResearchModal()">Close</button>
-                    <button type="button" class="btn-primary" id="apply-research-btn" style="display: none;" onclick="applyResearchResults()">Apply Results</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Loading Overlay -->
-        <div id="loading-overlay" class="loading-overlay" style="display: none;">
-            <div class="loading-content">
-                <div class="spinner-large"></div>
-                <p id="loading-text">Loading...</p>
-            </div>
-        </div>
-
-        <!-- Toast Notifications -->
-        <div id="toast-container" class="toast-container"></div>
-    </div>
-
-    <script src="app.js"></script>
+  <dialog class="planner-dialog" data-planner-dialog>
+    <form method="dialog" data-planner-form>
+      <header><div><span>New session</span><h2>Plan a Lunch & Learn</h2></div><button value="cancel" aria-label="Close planner"><i data-lucide="x"></i></button></header>
+      <div class="form-grid"><label>Partner<input name="company" required placeholder="Partner or guest" /></label><label>Topic<input name="topic" required placeholder="What will the agency learn?" /></label><label>Date<input type="date" name="date" required /></label><label>Time<input type="time" name="time" value="12:00" /></label><label>Format<select name="format"><option>In-Person</option><option>Virtual</option><option>Hybrid</option></select></label><label>Audience<input name="audience" placeholder="All agency, Strategy, Creative…" /></label><label class="wide">Location / link<input name="location" placeholder="Room, studio, or meeting link" /></label></div>
+      <footer><button value="cancel">Cancel</button><button class="primary" value="default" data-save-session>Save session</button></footer>
+    </form>
+  </dialog>
+  <dialog class="template-dialog" data-template-dialog><article><header><h2 data-template-title>Template</h2><button aria-label="Close template" data-close-template><i data-lucide="x"></i></button></header><pre data-template-content></pre><footer><button class="primary" data-copy-template><i data-lucide="clipboard"></i>Copy template</button></footer></article></dialog>
+  <script src="/dashboard/app.js" defer></script>
 </body>
 </html>
