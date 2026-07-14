@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#ffffff" />
+  <meta name="theme-color" content="#10131a" />
   <title>Lunch & Learn | AgencyThings</title>
   <link rel="stylesheet" href="/dashboard/styles.css" />
   <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
@@ -12,7 +12,10 @@
   <header class="topbar">
     <a class="back" href="https://jgerms20.github.io/AgencyThings/"><i data-lucide="arrow-left"></i><span>Joshua's AgencyThings</span></a>
     <div class="title"><strong>Lunch & Learn</strong><span>Programming desk</span></div>
-    <button class="primary" type="button" data-open-planner><i data-lucide="calendar-plus"></i>Plan a session</button>
+    <div class="topbar-actions">
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle color theme"><i data-lucide="sun"></i><span data-theme-label>Light mode</span></button>
+      <button class="primary" type="button" data-open-planner><i data-lucide="calendar-plus"></i>Plan a session</button>
+    </div>
   </header>
   <div class="app-shell">
     <aside class="nav-rail">
@@ -20,6 +23,7 @@
         <button class="active" data-view="today"><i data-lucide="calendar-days"></i>Today</button>
         <button data-view="pipeline"><i data-lucide="list-todo"></i>Pipeline</button>
         <button data-view="partners"><i data-lucide="users"></i>Partners</button>
+        <button data-view="contacts"><i data-lucide="user"></i>Contacts</button>
         <button data-view="calendar"><i data-lucide="calendar"></i>Calendar</button>
         <button data-view="templates"><i data-lucide="files"></i>Templates</button>
         <button data-view="archive"><i data-lucide="archive"></i>Archive</button>
@@ -27,7 +31,7 @@
       <div class="rail-photo"><img src="/dashboard/assets/lunch-learn-session.png" alt="Colleagues learning together over lunch" /><span>Build a program people make time for.</span></div>
     </aside>
     <main class="workspace">
-      <section class="filters"><label><i data-lucide="search"></i><input type="search" data-search placeholder="Search partners, topics, next actions" /></label><select data-vertical-filter><option value="all">All verticals</option></select><p data-status role="status">Program data loaded.</p></section>
+      <section class="filters"><label><i data-lucide="search"></i><input type="search" data-search placeholder="Search partners, contacts, topics, next actions" /></label><select data-vertical-filter><option value="all">All verticals</option></select><p data-status role="status">Program data loaded.</p></section>
       <section data-main-view aria-live="polite"><div class="loading">Loading the programming desk…</div></section>
     </main>
     <aside class="insight-rail" data-insight-rail></aside>
@@ -41,6 +45,6 @@
     </form>
   </dialog>
   <dialog class="template-dialog" data-template-dialog><article><header><h2 data-template-title>Template</h2><button aria-label="Close template" data-close-template><i data-lucide="x"></i></button></header><pre data-template-content></pre><footer><button class="primary" data-copy-template><i data-lucide="clipboard"></i>Copy template</button></footer></article></dialog>
-  <script src="/dashboard/app.js" defer></script>
+  <script type="module" src="/dashboard/app.js"></script>
 </body>
 </html>
